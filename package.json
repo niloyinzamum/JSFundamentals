@@ -1,6 +1,8 @@
 {
   "name": "Practice",
   "version": "1.0.0",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "celery-node": "^0.5.5"
   }
 }

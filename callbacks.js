@@ -28,16 +28,16 @@
 // //
 
 // ________________________________________________________________________
-// function myFirst(callback) {
-//     console.log("Hello");
-//     let x=2
-//     callback(x);
-// }
-//
-// function mySecond(x) {
-//     console.log("Goodbye"+ x);
-// }
-//
-// myFirst(mySecond);
+function myFirst(callback) {
+    console.log("Hello");
+    let x=2
+    callback(x);
+}
+
+function mySecond(x) {
+    console.log("Goodbye"+ x);
+}
+
+myFirst(mySecond);
 
 // ---------------------------------------------------------------------------
