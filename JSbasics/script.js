@@ -1,0 +1,7 @@
+// alert("external file")
+// const value1 = prompt("what's the value", 100)
+// const value3 = prompt("what's the value", '')
+const value = prompt("what's the value", [])
+const isReal = confirm("is it real")
+alert(value)
+alert(isReal)
