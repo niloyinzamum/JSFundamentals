@@ -18,6 +18,37 @@ let bag = {
     [fruit]: 5, // the name of the property is taken from the variable fruit
 };
 
+//------------------object copying
+let user = { name: "John" };
+let admin = user;
+//---------------------------------
+
+// ------------------this
+let user = {
+    name: "John",
+    age: 30,
+
+    sayHi() {
+        // "this" is the "current object"
+        alert(this.name);
+    }
+
+};
+
+user.sayHi();
+//---------------------------------
+// ------------------new Object/ Constructor functions
+function User(name) {
+    this.name = name;
+    this.isAdmin = false;
+}
+
+let user = new User("Jack");
+
+alert(user.name); // Jack
+alert(user.isAdmin); // false
+//---------------------------------
+
 
 
 delete object1.todelete;
@@ -36,6 +67,8 @@ function makeUser(name, age) {
         // ...
     };}
 
+
+
 //-----------------------Closure--------------------------------
 // <!DOCTYPE html>
 // <script>
@@ -51,3 +84,12 @@ function makeUser(name, age) {
 //
 //     getFunc()(); // error: value is not defined
 // </script>
+//-------------------------------------------------------------
+
+
+
+user = {
+    sayHi() { // same as "sayHi: function(){...}"
+        alert("Hello");
+    }
+};
