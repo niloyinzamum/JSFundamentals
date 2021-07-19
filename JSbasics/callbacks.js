@@ -1,9 +1,8 @@
 function aFunc(param, callback){
     const something = "something"
-    console.log(something)
-    callback(something, param)
-
-    console.log(something)
+    callback(param, something)
 }
-aFunc("new", setTimeout((somethingArg, paramArg)=>{console.log(`${somethingArg} ${paramArg}`)},3000))
-// setTimeout(aFunc("new", (somethingArg, paramArg)=>{console.log(`${somethingArg} ${paramArg}`)}),3000)
+
+aFunc("a string", (param, something)=>{
+    console.log(param, something)
+})
