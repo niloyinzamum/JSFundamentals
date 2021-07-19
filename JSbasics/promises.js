@@ -1,11 +1,11 @@
-let promise = new Promise(function(resolve, reject) {
-    // the function is executed automatically when the promise is constructed
+let promise = new Promise((resolve, reject)=>{
+    if(0>09)
+    {
+        resolve("resolved")
+        reject(new Error("erro msg"))
+    }
+    else reject(new Error("errr"))
+})
 
-    // after 1 second signal that the job is done with the result "done"
-    setTimeout(() => resolve("done"), 1000);
-});
-
-let promise1 = new Promise(function(resolve, reject) {
-    // after 1 second signal that the job is finished with an error
-    setTimeout(() => reject(new Error("Whoops!")), 1000);
-});
+promise.then((result)=>{console.log(result)})
+.catch(err=>{console.log(err)})
