@@ -1,6 +1,6 @@
-function f(){
-    let value = "test"
-    console.log("value")
-    return value
+let suppose = {}
+suppose.sayHello = () => {
+  return console.log('Hello')
 }
-module.exports = f
+
+module.exports = suppose
