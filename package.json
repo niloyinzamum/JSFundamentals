@@ -1,8 +1,22 @@
 {
-  "name": "Practice",
+  "name": "practice",
   "version": "1.0.0",
-  "dependencies": {},
   "devDependencies": {
     "celery-node": "^0.5.5"
-  }
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://codenstein@bitbucket.org/codenstein/javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/codenstein/javascript/issues"
+  },
+  "homepage": "https://bitbucket.org/codenstein/javascript#readme",
+  "description": ""
 }
