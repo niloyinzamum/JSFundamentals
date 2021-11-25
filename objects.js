@@ -21,6 +21,7 @@ testObject.aFunc()
 // console.log(testObject.secondFunction())
 console.log(testObject)
 
+//using for in is the only 
 for(let i in testObject){
     console.log(i)
     console.log(testObject[i])
