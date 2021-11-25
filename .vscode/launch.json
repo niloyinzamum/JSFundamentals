@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "https://github.com/niloyinzamum/JSFundamentals.git",
+            "request": "launch",
+            "url": "https://github.com/niloyinzamum/JSFundamentals.git"
+        }
+    ]
+}
