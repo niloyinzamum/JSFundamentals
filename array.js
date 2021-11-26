@@ -61,6 +61,30 @@ latestArray = theArray.concat(latestArray, theNewArray)
 console.log(latestArray)
 
 //slicing the array and assigning it to a new one (remove first two positions)
+console.log(theArray)
 latestArray = theArray.slice(2)
 console.log(latestArray)
 
+//sorting in an alphabettical manner
+latestArray.sort()
+console.log(latestArray)
+
+//reverse it
+latestArray.reverse()
+console.log(latestArray)
+
+numberArray = [2,4,5,6,3,2,5,6]
+
+//asdending order
+numberArray.sort(function(a,b){return a-b})
+console.log(numberArray)
+
+//descending order
+numberArray.sort(function(a,b){return b-a})
+console.log(numberArray)
+
+//random order
+numberArray.sort(function(a, b){return .5-Math.random()})
+console.log(numberArray)
+
+//fisher yates mathod
