@@ -87,6 +87,36 @@ console.log(numberArray)
 numberArray.sort(function(a, b){return .5-Math.random()})
 console.log(numberArray)
 
-//fisher yates method (1938)
+//fisher yates method (1938) to sort the array in a random order manually
+for(let i = numberArray.length-1; i>0; i--)
+{
+    let j = Math.floor(Math.random()* i)
+    let k = numberArray[i]
+    numberArray[i] = numberArray[j]
+    numberArray[j] = k
+}
 
 
+//manually find the max number
+function myArrayMax(arr) {
+    let len = arr.length;
+    let max = -Infinity;
+    while (len--) {
+      if (arr[len] > max) {
+        max = arr[len];
+      }
+    }
+    return max;
+  }
+
+//manually finding the minimum value
+function myArrayMin(arr) {
+    let len = arr.length;
+    let min = Infinity;
+    while (len--) {
+      if (arr[len] < min) {
+        min = arr[len];
+      }
+    }
+    return min;
+  }
