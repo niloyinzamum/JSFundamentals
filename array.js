@@ -87,4 +87,6 @@ console.log(numberArray)
 numberArray.sort(function(a, b){return .5-Math.random()})
 console.log(numberArray)
 
-//fisher yates mathod
+//fisher yates method (1938)
+
+
