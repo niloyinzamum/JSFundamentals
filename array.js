@@ -99,24 +99,34 @@ for(let i = numberArray.length-1; i>0; i--)
 
 //manually find the max number
 function myArrayMax(arr) {
-    let len = arr.length;
-    let max = -Infinity;
-    while (len--) {
-      if (arr[len] > max) {
-        max = arr[len];
+    let len = arr.length;  //array length, in this case 7
+    let max = -Infinity;   //assigning to the smallest value
+    while (len--) {         // loop untill the len is zero
+      if (arr[len] > max) { //is it greater than max? 
+        max = arr[len];     //assign the value to max
       }
     }
     return max;
   }
 
+
 //manually finding the minimum value
 function myArrayMin(arr) {
     let len = arr.length;
     let min = Infinity;
-    while (len--) {
+    while (len--) { 
       if (arr[len] < min) {
         min = arr[len];
       }
     }
     return min;
   }
+
+  //array object 
+  const cars = [
+    {type:"Volvo", year:2016},
+    {type:"Saab", year:2001},
+    {type:"BMW", year:2010}
+  ];
+
+  console.log(cars.sort(function(a, b){return a.year - b.year}))
