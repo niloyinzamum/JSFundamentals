@@ -13,3 +13,22 @@ class theClass {
 
 const bar = new theClass()
 bar.foo()
+
+class MasterCLass{
+    objVal;
+
+    constructor(classVar){
+        this.objVal =  classVar
+        console.log("classvar: "+classVar)     
+        console.log("objVal: "+this.objVal)     
+    }
+    
+    anotherFunc(){
+        console.log(this.objVal)
+    }
+
+
+    }
+
+const masterObj =new MasterCLass(25)
+masterObj.anotherFunc()
