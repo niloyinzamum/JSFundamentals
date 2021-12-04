@@ -23,12 +23,20 @@ class MasterCLass{
         console.log("objVal: "+this.objVal)     
     }
     
-    anotherFunc(){
-        console.log(this.objVal)
+    anotherFunc(takesValue){
+        console.log(this.objVal) 
+        console.log(takesValue)
     }
 
 
     }
+   
+ class ChildClass extends MasterCLass{
+
+ }   
 
 const masterObj =new MasterCLass(25)
-masterObj.anotherFunc()
+masterObj.anotherFunc("this")
+
+const ChildClassObj = new ChildClass("childObject")
+ChildClassObj.anotherFunc(5)
