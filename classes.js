@@ -95,3 +95,36 @@ const dogObj = new Dog("dog")
 dogObj.run(10)
 dogObj.stop()
 dogObj.hide()
+
+//---------------------------------------------------
+class Parent{
+    _hairColor
+    #FaceBookAccount
+    _bloodGroup
+    charitableCompany
+
+    constructor(hairColor, faceBook, bloodGroup, charitableCompany){
+        hairColor = this._hairColor
+        faceBook = this.#FaceBookAccount
+        bloodGroup = this._bloodGroup
+        charitableCompany = this.charitableCompany
+    }
+
+    get hairColor(){
+        return this._hairColor
+    }
+
+    get charitableCompanyFunc(){
+        return "has charitable company"
+    }
+}
+
+class Child extends Parent{
+
+}
+
+
+const parentObj = new Parent("red","available", "B+ve", " ")
+console.log(parentObj.charitableCompanyFunc) //public method 
+const child1Obj = new Child()
+console.log(childObj.hairColor)
