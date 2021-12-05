@@ -106,3 +106,30 @@ let user = {
 };
 
 user.sayHi();
+
+let anObj = {
+    name: "theName",
+    objFunc1 :function objFunction(){
+        console.log(`with regular function ${this.name}`)
+    },
+
+    anotherFunc(){
+        console.log(`with regular function ${this.name}`)
+    } ,
+
+    afunc : function (){
+        console.log(`with anonymus function ${this.name}`)
+    }, 
+
+    arrow : ()=>{
+        console.log(`with anonymus function ${this.name}`) //arrow function doesn'nt have a this
+    }, 
+
+}
+
+//-----------------------------------------
+
+anObj.objFunc1();
+anObj.anotherFunc();
+anObj.afunc();
+anObj.arrow();
