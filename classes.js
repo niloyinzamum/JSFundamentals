@@ -104,27 +104,43 @@ class Parent{
     charitableCompany
 
     constructor(hairColor, faceBook, bloodGroup, charitableCompany){
-        hairColor = this._hairColor
-        faceBook = this.#FaceBookAccount
-        bloodGroup = this._bloodGroup
-        charitableCompany = this.charitableCompany
+        this._hairColor = hairColor 
+        this.#FaceBookAccount = faceBook
+        this._bloodGroup = bloodGroup 
+        this.charitableCompany = charitableCompany 
     }
 
     get hairColor(){
         return this._hairColor
     }
 
+    set hairColor(hairColor){
+        this._hairColor = hairColor
+    }
+
     get charitableCompanyFunc(){
         return "has charitable company"
     }
+    
+    faceBook(){
+        console.log(this.#FaceBookAccount)
+    }
+
+
 }
 
 class Child extends Parent{
-
+    
 }
 
 
 const parentObj = new Parent("red","available", "B+ve", " ")
 console.log(parentObj.charitableCompanyFunc) //public method 
-const child1Obj = new Child()
-console.log(childObj.hairColor)
+console.log(parentObj.hairColor) 
+parentObj.hairColor = "blue"
+console.log(parentObj.hairColor) 
+parentObj.faceBook() 
+
+const child1obj = new Child()
+child1obj.hairColor = "green"
+console.log(child1obj.hairColor)
