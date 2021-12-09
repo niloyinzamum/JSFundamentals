@@ -4,3 +4,6 @@ higher order functions
 callbacks
 promises
 aync/await
+map()
+filter()
+reduce()
